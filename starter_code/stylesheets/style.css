@@ -5,3 +5,459 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Open Sans';
+  color: #323747;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+img {
+  width: 100%;
+}
+
+.padding {
+  padding-right: 9.375vw;
+  padding-left: 9.375vw;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.flex {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+button, input {
+  width: 100%;
+  padding: 15px;
+}
+
+.purple-button {
+  background-color: #4153aa;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+input {
+  border: .5px solid #D9D9D9;
+  border-radius: 4px;
+  /* font-size: 1.7rem; */
+}
+
+.white-button {
+  background-color: white;
+  border: 1px solid #192592;
+  border-radius: 5px;
+  color: #192592;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+h1, h2, h3{
+  font-family: 'Playfair Display';
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 8.5vw;
+}
+
+h2 {
+  font-size: 6vw;
+}
+
+h3 {
+  font-size: 4.5vw;
+}
+
+ul {
+  list-style: none;
+}
+
+/*----- NAV BAR -----*/
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  
+  background-color: white;
+  height: 70px;
+  width: 100vw;
+  max-width: 100%;
+  padding: 9px 29px;
+  border-bottom: .5px solid #D9D9D9;
+  
+}
+
+nav li {
+  list-style: none;
+}
+
+#nav-slack-logo {
+  height: auto;
+  width: 90px;
+}
+
+#menu-burguer div {
+  width: 24.5px;
+  height: 3px;
+  background-color: #555;
+  margin: 4px 0;
+}
+
+nav ul {
+  display: none;
+}
+
+/*-------------------*/
+/*----- HEADER -----*/
+#header {
+  padding-top: 90px;
+}
+
+#header-text-container {
+  align-items: flex-start;
+}
+
+#header-text-container p {
+  margin-top: 30px;
+}
+
+#header-email-container {
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+#header-email-container button {
+  margin-top: 15px;
+}
+
+#header-email-container p {
+  margin-top: 10px;
+}
+
+#header img {
+  margin-top: 60px;
+}
+
+/*-------------------*/
+/*----- MAIN -----*/
+main {
+  background-color: #F4F3F4;
+  padding-top: 50px;
+}
+
+#main figure {
+  width: 30vw;
+}
+
+#main img {
+  margin: 45px 0;
+  height: auto;
+  width: 100%;
+}
+
+#main-text {
+  width: 85%;
+  text-align: center;
+}
+
+#main button {
+  margin-top: 25px;
+}
+
+#brands-box {
+  margin: 25px 0;
+}
+
+/*-------------------*/
+/*----- FOOTER -----*/
+#footer {
+  padding-top: 50px;
+}
+
+#footer-text-container p{
+  margin-top: 8px;
+}
+
+#footer-email-container {
+  margin-top: 15px;
+  align-items: center;
+}
+
+#footer-email-container button {
+  margin-top: 15px;
+}
+
+#footer-logo-list {
+  padding: 0;
+  width: 80vw;
+  align-items: flex-start;
+}
+
+#footer-logo-list img {
+  height: auto;
+  width: 28vw;
+  margin-left: -9.5vw;
+}
+
+#footer-list {
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#footer-list ul {
+  margin: 10px;
+  width: 40%;
+}
+
+.footer-list-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.footer-list-item {
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+}
+
+#post-footer-container {
+  /* flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start; */
+  
+  font-weight: bold;
+  background-color: #F4F3F4;
+  width: 100vw;
+  max-width: 100%;  
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2.5vw;
+}
+
+#post-footer-container li {
+  display: inline-block;
+  justify-content: center;
+  margin: 0 12px;
+  line-height: 3em;
+}
+
+#flag-container {
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+#flag-container img {
+  height: auto;
+  width: 20px;
+}
+
+#flag-container img, span, i {
+  margin: 0 5px;
+}
+
+#social-icons-container {
+  flex-flow: row wrap;
+  justify-content: center;
+  
+  margin-top: 15px;
+}
+
+#social-icons-container i {
+  margin: 0 10px;
+}
+/*-------------------*/
+
+@media (min-width: 767px) {
+  
+  input, button {
+    width: 40vw;
+  }
+  
+  button {
+    width: 20vw;
+  }
+  
+  #header-email-container {
+    flex-flow: row wrap;
+  }
+  
+  #header-email-container button {
+    margin: 0 0 0 10px;
+  }
+  
+  #header img {
+    width: 70vw;
+  }
+  
+  #brands-box {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  
+  #footer-text-email-container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  #footer-text-email-container button {
+    margin: 0 0 0 10px;
+  }
+  
+  #footer-logo-list {
+    margin: 50px 0 40px;
+  }
+  
+  #footer-text-container {
+    align-items: flex-start;
+  }
+  
+  #footer-text-container h3 {
+    font-size: 2.5rem;
+  }
+  
+  #footer-email-container {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  
+  #footer-email-container input {
+    width: 20vw;
+  }
+  
+  #footer-logo-list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  #footer-list {
+    width: 80%;
+    justify-content: space-between;
+  }
+  
+  #footer-list ul {
+    width: 20%;
+    margin: 0;
+  }
+  
+  #footer-logo-list img {
+    width: 15vw;
+    margin-left: -25px;
+  }
+  
+  #post-footer-container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  #flag-container {
+    flex-flow: row wrap;
+    margin-top: 0;
+  }
+  
+  #social-icons-container {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 961px) {
+  #brands-box figure {
+    width: 26%;
+  }
+  
+  #header-email-container p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav ul {
+    display: inline;
+  }
+  
+  nav li {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-left: 30px;
+  }
+  
+  #menu-burguer {
+    display: none
+  }
+  
+  #button-like-li {
+    border: 1px solid #323747;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  #header {
+    flex-flow: row-reverse nowrap;
+  }
+  
+  #header-right-panel {
+    width: 56%;
+    align-items: flex-start;
+    margin-left: 60px;
+  }
+  
+  #header-text-container {
+    width: 100%;
+  }
+  
+  #header-text-container h1 {
+    font-size: 7.6rem;
+  }
+
+  #header-email-container {
+    width: 50%;
+  }
+  
+  #header-email-container button {
+    margin: 0;
+  }
+  
+  #header img {
+    display: inline;
+    width: 50%;
+  }
+
+  #main button {
+    margin-top: 50px;
+  }
+
+  #main h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+ 
+}
